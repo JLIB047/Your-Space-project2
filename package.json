@@ -1,0 +1,32 @@
+{
+  "name": "project-2-your-space-",
+  "version": "1.0.0",
+  "description": "Social Media App ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JLIB047/Project-2-Your-Space-.git"
+  },
+  "author": "Group 4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JLIB047/Project-2-Your-Space-/issues"
+  },
+  "homepage": "https://github.com/JLIB047/Project-2-Your-Space-#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "express.js": "^1.0.0",
+    "mysql2": "^2.3.3",
+    "sequelize": "6.1.0"
+  },
+  "devDependencies": {
+    "connect-session-sequelize": "^7.1.2"
+  }
+}
