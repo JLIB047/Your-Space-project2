@@ -1,5 +1,5 @@
 {
-  "name": "project-2-your-space-",
+  "name": "your-space-project2",
   "version": "1.0.0",
   "description": "Social Media App ",
   "main": "server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JLIB047/Project-2-Your-Space-.git"
+    "url": "git+https://github.com/JLIB047/Your-Space-project2.git"
   },
   "author": "Group 4",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JLIB047/Project-2-Your-Space-/issues"
+    "url": "https://github.com/JLIB047/Your-Space-project2-/issues"
   },
-  "homepage": "https://github.com/JLIB047/Project-2-Your-Space-#readme",
+  "homepage": "https://github.com/JLIB047/Your-Space-project2-#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "dotenv": "^10.0.0",
