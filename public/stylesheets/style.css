@@ -52,3 +52,19 @@ label {
 .login-link {
     padding-left: 20px;
 }
+
+button {
+    color: black;
+    background-color: orange;
+    border: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+input {
+    font-weight: bold;
+  }
