@@ -8,18 +8,18 @@ body {
 
 a {
     text-decoration: none;
-    color: lightgreen;
+    color: orange;
     font-weight: bold;
     transition: color .1s;
     padding-right: 20px;
 }
 
 a:hover {
-    color: green;
+    color: darkorange;
 }
 
 .app-title {
-    color: lightgreen;
+    color: orange;
 }
 
 .title-container {
@@ -42,7 +42,7 @@ a:hover {
 }
 
 label {
-    color: lightgreen;
+    color: orange;
     font-weight: bold;
     padding-left: 20px;
 }
