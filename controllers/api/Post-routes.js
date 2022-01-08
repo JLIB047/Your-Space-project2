@@ -1,12 +1,14 @@
-const sequelize = require('../config/connection');
-const { Post, User, Comment } = require('../models');
+const sequelize = require('../../config/connection');
+const withAuth = require('../../utils/auth');
+const { Post, User, Comment } = require('../../models');
 const router = require('express').Router();
+
 router.get('/', (req, res) => {
     Post.findAll({
             attributes: [
                 'id',
                 'title',
-                'content',
+                'post_url',
                 'created_at'
             ],
             include: [{
@@ -52,7 +54,7 @@ router.get('/post/:id', (req, res) => {
             },
             attributes: [
                 'id',
-                'content',
+                'post_url',
                 'title',
                 'created_at'
             ],
@@ -93,7 +95,7 @@ router.get('/posts-comments', (req, res) => {
             },
             attributes: [
                 'id',
-                'content',
+                'post_url',
                 'title',
                 'created_at'
             ],
@@ -120,6 +122,20 @@ router.get('/posts-comments', (req, res) => {
 
             res.render('posts-comments', { post, loggedIn: req.session.loggedIn });
         })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+});
+router.post('/', withAuth, (req, res) => {
+    console.log(req.body);
+    console.log(req.session.user_id);
+    Post.create({
+            title: req.body.title,
+            post_url: req.body.post_url,
+            user_id: req.session.user_id
+        })
+        .then(dbPostData => res.json(dbPostData))
         .catch(err => {
             console.log(err);
             res.status(500).json(err);
