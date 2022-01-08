@@ -69,3 +69,9 @@ input {
     font-weight: bold;
     padding-left: 5px;
 }
+
+input:focus { 
+    outline: none;
+    border-color: orange;
+    box-shadow: 0 0 10px 0 orange;
+}
