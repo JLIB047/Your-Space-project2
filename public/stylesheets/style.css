@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: lightgreen;
+    font-weight: bold;
+    transition: color .1s;
+    padding-right: 20px;
+}
+
+a:hover {
+    color: green;
+}
+
+.app-title {
+    color: lightgreen;
+}
+
+.title-container {
+    width: 800px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    
+    position: absolute;
+    top:-250px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+}
+
+.app-title {
+    font-size: 100px;
+}
+
+label {
+    color: lightgreen;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.login-link {
+    padding-left: 20px;
+}
