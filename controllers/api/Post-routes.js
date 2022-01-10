@@ -1,5 +1,5 @@
-const sequelize = require('../config/connection');
-const { Post, User, Comment } = require('../models');
+const sequelize = require('../../config/connection');
+const { Post, User, Comment } = require('../../models');
 const router = require('express').Router();
 router.get('/', (req, res) => {
     Post.findAll({
@@ -125,5 +125,7 @@ router.get('/posts-comments', (req, res) => {
             res.status(500).json(err);
         });
 });
+
+//router.post()
 
 module.exports = router;
