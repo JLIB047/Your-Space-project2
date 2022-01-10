@@ -41,6 +41,9 @@ a:hover {
 .app-title {
     font-size: 100px;
 }
+h2 {
+    color: orange;
+}
 
 label {
     color: orange;
