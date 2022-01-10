@@ -27,7 +27,8 @@
     "express.js": "^1.0.0",
     "mysql2": "^2.3.3",
     "seed": "^0.4.4",
-    "sequelize": "^6.1.0"
+    "sequelize": "^6.13.0",
+    "store": "^2.0.12"
   },
   "devDependencies": {
     "connect-session-sequelize": "^7.1.2"
