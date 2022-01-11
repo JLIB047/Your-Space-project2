@@ -24,9 +24,9 @@ An MVC-powered blog for anything and everything in the world of music.
   Click the badge at the top of this README for more information on this particular license.
 
 ## Collaborators
-https://github.com/JLIB047
-https://github.com/mjc01002
-https://github.com/holmesmainsend
+* https://github.com/JLIB047
+* https://github.com/mjc01002
+* https://github.com/holmesmainsend
 
 ## Questions?
   * GitHub: https://github.com/JLIB047
