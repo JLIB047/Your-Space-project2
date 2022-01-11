@@ -1,5 +1,4 @@
 
-=======
 # YourSpace
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -32,4 +31,3 @@ An MVC-powered blog for anything and everything in the world of music.
 
 ## Questions?
   * GitHub: https://github.com/JLIB047
->>>>>>> b487159167243b0be7cfb3674351b015cc114b96
