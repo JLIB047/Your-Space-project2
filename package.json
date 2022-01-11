@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Social Media App ",
   "main": "server.js",
+  "engines": {
+    "node": "17.1.0"
+  },
   "scripts": {
-    "start": "node server.js",
-    "seed": "node seeds/index.js"
+    "start": "node server.js"
+    
   },
   "repository": {
     "type": "git",
