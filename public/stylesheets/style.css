@@ -8,7 +8,7 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: orange;
     font-weight: bold;
     font-size: 20px;
     transition: color .1s;
