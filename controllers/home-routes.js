@@ -4,9 +4,23 @@ const router = require('express').Router();
 
 
 router.get('/', (req, res) => {
-  res.render('homepage');
+    Post.findAll({
+            attributes: [
+                'id',
+                'title',
+                'post_url',
+                'created_at'
+            ]
+        })
+        .then(dbPostData => {
+            const posts = dbPostData.map(post => post.get({ plain: true }));
+            res.render('homepage', { posts, loggedIn: req.session.loggedIn });
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
 });
-
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/');
