@@ -20,7 +20,7 @@ const sess = {
 }
 const app = express();
 const PORT = process.env.PORT || 3001;
-
+var colors = require('colors');
 app.use(session(sess));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -31,5 +31,5 @@ app.set('view engine', 'handlebars');
 
 //turn on server connection 
 sequelize.sync({ force: false }).then(() => {
-    app.listen(PORT, () => console.log('Now Listening'))
+    app.listen(PORT, () => console.log(colors.cyan('Now Listening')))
 })
