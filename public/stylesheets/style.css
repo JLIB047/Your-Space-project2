@@ -78,3 +78,8 @@ input:focus {
     border-color: orange;
     box-shadow: 0 0 10px 0 orange;
 }
+
+.form-input {
+    color:orange;
+    background-color: black;
+}

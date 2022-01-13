@@ -4,15 +4,15 @@ const router = require('express').Router();
 const withAuth = require('../../utils/auth');
 const multer = require('multer');
 
-// const storage = multer.diskStorage({
-//   destination: function(req, file, cb) {
-//     cb(null, './uploads/');
-//   },
-//   filename: function(req, file, cb) {
-//     cb(null, file.originalname);
-//   }
-// });
-// const upload = multer({storage: storage});
+const storage = multer.diskStorage({
+  destination: function(req, file, cb) {
+    cb(null, './uploads/');
+  },
+  filename: function(req, file, cb) {
+    cb(null, file.originalname);
+  }
+});
+const upload = multer({storage: storage});
 
 router.get('/', (req, res) => {
     console.log('======================');
@@ -86,12 +86,12 @@ router.get('/:id', (req, res) => {
         });
 });
 
-router.post('/', withAuth, (req, res) => {
+router.post('/', upload.single('postImage'), withAuth, (req, res) => {
     
     Post.create({
             title: req.body.title,
             post_url: req.body.post_url,
-            //image: req.file.path,
+            image: req.file.path,
             user_id: req.session.user_id
         })
         .then(dbPostData => res.json(dbPostData))

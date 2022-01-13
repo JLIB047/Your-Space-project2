@@ -20,12 +20,20 @@ Post.init(
         post_url: {
             type: DataTypes.STRING,
             allowNull: false, 
+            reference: {
+                model: 'post',
+                key: 'id'
+            },
             validate: {
                 isURL: true
             }
         },
         image: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            reference: {
+                model: 'post',
+                key: 'id'
+            }
         },
 
         user_id: {
