@@ -1,8 +1,15 @@
-<h2> Check Out the Latest Bands!!!</h2>
-<ol class="post-list">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info post }}
-  </li>
-  {{/each}}
-</ol>
+
+
+{{#if posts.length}}
+<section>
+  <h2>Check Out The Latest Bands!!!</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <a href="/post/{{post.id}}" class="comment-link">Comment</a>
+    </li>  
+    {{/each}}
+  </ol>
+</section>
+{{/if}}

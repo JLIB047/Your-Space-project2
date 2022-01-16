@@ -29,8 +29,8 @@ a:hover {
     display: flex;
     justify-content: center;
     
-    position: absolute;
-    top:-250px;
+    position: top;
+    top: -300px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -77,4 +77,14 @@ input:focus {
     outline: none;
     border-color: orange;
     box-shadow: 0 0 10px 0 orange;
+}
+
+.comment_text {
+    color: orange;
+    font-weight: lighter;
+}
+
+.post-list {
+    color: orange;
+    font-weight: bold;
 }

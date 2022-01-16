@@ -5,7 +5,7 @@
 
 ![Screenshot of Website](public/website_screenshot.png)
 
-Link to Heroku App: 
+Link to Heroku App: https://salty-inlet-95193.herokuapp.com/
 
   ## Table of Contents
   * [Description](#description)
